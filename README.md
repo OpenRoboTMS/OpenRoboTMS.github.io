@@ -1,6 +1,8 @@
 # OpenRoboTMS Project Page
 
-This repository is about the webpage for the project OpenRoboTMS at https://openrobotms.github.io/.
+This is the project page for **[OpenRoboTMS](https://openrobotms.github.io/)**, an open-source robotic platform for navigated Transcranial Magnetic Stimulation (TMS). OpenRoboTMS provides accessible hardware configurations and integrates advanced robotics with medical imaging through [ROS](https://www.ros.org/) and [3D Slicer](https://www.slicer.org/), lowering the barrier to entry for reproducible, extensible research in robot-assisted TMS.
+
+> **Note:** The codebase is currently being finalised and the accompanying papers are under review. All materials will be publicly released upon acceptance.
 
 ## Editing the Website
 
