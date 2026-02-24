@@ -128,7 +128,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Transcranial Magnetic Stimulation (TMS) is a non-invasive brain stimulation technique widely used in neuroscience research and clinical applications. However, the precision and effectiveness of TMS treatments can be limited by the lack of accurate targeting and real-time feedback. To address these challenges, we present OpenRoboTMS, an open-source robotic platform designed for navigated TMS applications. OpenRoboTMS integrates advanced robotic control with real-time neuroimaging feedback to enhance the accuracy and efficacy of TMS treatments. The platform features a user-friendly interface, customizable stimulation protocols, and compatibility with various neuroimaging modalities. We demonstrate the capabilities of OpenRoboTMS through a series of experiments, showcasing its potential to improve TMS targeting and facilitate new research avenues in neuroscience and neuromodulation. The code is organising and the papers are under review, and we will release the code and the paper once they are accepted. We hope that OpenRoboTMS will serve as a valuable resource for researchers and clinicians in the field of TMS, fostering collaboration and innovation in brain stimulation technologies.
+            Robot-assisted Transcranial Magnetic Stimulation (Robo-TMS) is an image-guided robotic intervention that enhances the accuracy and reproducibility of conventional manual TMS, a widely used non-invasive brain stimulation procedure in clinical treatment and neuroscience research. Despite its potential, the development of Robo-TMS remains challenging due to the need for multidisciplinary expertise spanning medical imaging, computer vision, and robotics. To address these gap, we present OpenRoboTMS, an open-source robotic platform designed for navigated TMS applications. OpenRoboTMS not only provides the accessible hardware configuration but also integrates advanced robotics and medical imaging by introducing the well-developed and fully open-source ROS and 3D Slicer, which ensures the most advanced development could be easily incorpared into Robo-TMS. We demonstrate the capabilities of OpenRoboTMS through a series of experiments, showcasing its potential to facilitate new research as a benchmark and lowers the barrier to entry and facilitates reproducible and extensible research in Robo-TMS. At current stage, the code is organising and the papers are under review, and we will release the code and the paper once they are accepted. We hope that OpenRoboTMS will serve as a valuable resource for researchers and clinicians in the field of TMS, fostering collaboration and innovation in brain stimulation technologies.
           </p>
         </div>
       </div>
@@ -137,7 +137,7 @@
 </section>
 
 
-<!-- =========================== Common Space Visualization =========================== -->
+<!-- =========================== Overview Video =========================== -->
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
@@ -155,9 +155,54 @@
 
           <div class="content has-text-justified">
             <p>
-              This video presents an overview of the proposed OpenRoboTMS platform, highlighting its background, motivations, and key features for robot-assisted Transcranial Magnetic Stimulation (TMS). It demonstrates how clinicians can perform precise stimulation through an integrated workflow encompassing calibration, MRI-to-phantom registration, target selection, and continuous robotic tracking. Built on 3D Slicer and ROS, the platform delivers an open and extensible framework that integrates hardware, software, and core algorithms, supporting reproducible research and accelerating innovation in robot-assisted TMS.
+              This video presents an overview of the proposed OpenRoboTMS platform, highlighting its background, motivations, and key features for robot-assisted Transcranial Magnetic Stimulation (TMS). It demonstrates how clinicians can perform precise stimulation through an integrated workflow encompassing calibration, MRI-to-phantom registration, target selection, and continuous robotic tracking. Built on 3D Slicer and ROS, the platform delivers an open and extensible framework that integrates accessible hardware, fully open-source software, core algorithms and their benchmarks for performance evaluation, supporting reproducible research and accelerating innovation in robot-assisted TMS.
             </p>
           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- =========================== Background =========================== -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3 has-text-centered">Background and Motivation</h2>
+
+          <div class="item">
+            <div class="content has-text-justified" style="margin-top: 1.5rem; margin-bottom: 1rem;">
+              <p>
+                  Transcranial Magnetic Stimulation, or TMS, is a non-invasive neuromodulation technique that modulates brain activity by inducing electric currents through rapidly changing magnetic pulses. TMS has demonstrated effectiveness in diagnosing neurological disorders, treating mental health conditions, and functional brain mapping.
+              </p>
+            </div>
+
+            <img src="static/images/principle.png" alt="OpenRoboTMS Background" style="width: 40%; display: block; margin: 0 auto;"/>
+
+            <div class="content has-text-justified" style="margin-top: 1.5rem; margin-bottom: 1rem;">
+              <h6 class="subtitle has-text-centered">
+                The principle of TMS
+              </h6>
+              <p>
+                Compared with manual TMS, robot-assisted TMS (Robo-TMS) integrates neuronavigation, a robot arm, and optical tracking to visualise stimulation targets, maintain precise coil positioning, and compensate for head motion. This significantly improves accuracy, repeatability, and clinical consistency.
+              </p>
+            </div>
+
+            <img src="static/images/background.png" alt="OpenRoboTMS Background" style="width: 80%; display: block; margin: 0 auto;"/>
+
+            <div class="content has-text-justified" style="margin-top: 1.5rem; margin-bottom: 1rem;">
+              <h6 class="subtitle has-text-centered">
+                Comparison of manual TMS vs. RoboTMS
+              </h6>
+              <p>
+                Despite its potential, further technological advancement requires broader research participation; however, the absence of an open Robo-TMS platform limits this progress. This project aims to address this gap by providing accessible hardware, open and extensible software, essential algorithms, and standardised benchmarks to accelerate research and innovation.
+              </p>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
@@ -178,10 +223,10 @@
 
             <div class="content has-text-justified" style="margin-top: 1.5rem; margin-bottom: 1rem;">
               <h6 class="subtitle has-text-centered">
-                Overview of the proposed OpenRoboTMS hardware configuration.
+                The overview of the proposed OpenRoboTMS hardware configuration
               </h6>
               <p>
-                The figure illustrates the proposed OpenRoboTMS hardware configuration. The system consists of a robotic arm with multiple degrees of freedom, a TMS device mounted on the robotic platform, and a control system that integrates real-time neuroimaging feedback. The robotic arm enables precise positioning and orientation of the TMS device relative to the target brain region, while the control system manages the stimulation parameters and feedback loop.
+                The figure illustrates the proposed OpenRoboTMS hardware configuration. The system consists of an optical tracking camera, a TMS stimulator, an MRI-based head model, customisable markers, a registration stylus, a host computer, and a robot arm.
               </p>
             </div>
           </div>
@@ -201,14 +246,14 @@
           <h2 class="title is-3 has-text-centered">Open and Extensible Software Framework</h2>
 
           <div class="item">
-            <img src="static/images/software_framework.png" alt="OpenRoboTMS Software Framework"/>
+            <img src="static/images/software_framework.png" alt="OpenRoboTMS Software Framework" style="width: 80%; display: block; margin: 0 auto;"/>
 
             <div class="content has-text-justified" style="margin-top: 1.5rem; margin-bottom: 1rem;">
               <h6 class="subtitle has-text-centered">
-                Overview of the proposed OpenRoboTMS software framework.
+                Overview of the proposed OpenRoboTMS software framework
               </h6>
               <p>
-                The figure illustrates the proposed OpenRoboTMS software framework. The system consists of a robotic arm with multiple degrees of freedom, a TMS device mounted on the robotic platform, and a control system that integrates real-time neuroimaging feedback. The robotic arm enables precise positioning and orientation of the TMS device relative to the target brain region, while the control system manages the stimulation parameters and feedback loop.
+                The figure illustrates the proposed OpenRoboTMS software framework. The software framework is built on 3D Slicer and ROS, enabling calibration, registration, navigation, and robotic control within a unified, fully open-source system.
               </p>
             </div>
           </div>
@@ -225,27 +270,39 @@
     <div class="container">
       <div class="columns is-centered">
         <div class="column is-four-fifths">
-          <h2 class="title is-3 has-text-centered">Essential Algorithms</h2>
+          <h2 class="title is-3 has-text-centered">Essential Algorithm Demonstration</h2>
           <div id="results-carousel" class="carousel results-carousel">
             <div class="item item-video1">
               <video id="video1" autoplay controls muted playsinline preload="auto">
                 <source src="static/videos/calibration.mp4" type="video/mp4">
               </video>
+              <h2 class="subtitle has-text-centered">
+                Calibration Demonstration
+              </h2>
             </div>
             <div class="item item-video2">
               <video id="video2" controls muted playsinline preload="auto">
                 <source src="static/videos/registration.mp4" type="video/mp4">
               </video>
+              <h2 class="subtitle has-text-centered">
+                Registration Demonstration
+              </h2>
             </div>
             <div class="item item-video3">
               <video id="video3" controls muted playsinline preload="auto">
                 <source src="static/videos/targeting.mp4" type="video/mp4">
               </video>
+              <h2 class="subtitle has-text-centered">
+                Targeting Demonstration
+              </h2>
             </div>
             <div class="item item-video4">
               <video id="video4" controls muted playsinline preload="auto">
                 <source src="static/videos/tracking.mp4" type="video/mp4">
               </video>
+              <h2 class="subtitle has-text-centered">
+                Tracking Demonstration
+              </h2>
             </div>
           </div>
         </div>
@@ -254,6 +311,51 @@
   </div>
 </section>
 <!-- End video carousel -->
+
+
+<!-- =========================== Standardised Benchmark =========================== -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3 has-text-centered">Standardised Benchmark</h2>
+
+          <div class="item">
+            <!-- Multi-subfigure layout for subject selection -->
+            <div class="columns is-multiline is-centered">
+              <!-- First row: one centered subfigure -->
+              <div class="column is-half">
+                <figure class="image">
+                  <img src="static/images/result_convergence.png" alt="Average recognition accuracy across all subjects"/>
+                  <figcaption class="has-text-centered" style="margin-top: 0.5rem;">
+                    <strong>(a)</strong> Convergence of position and orientation errors over time during robotic tracking.
+                  </figcaption>
+                </figure>
+              </div>
+              <!-- Second row: one centered subfigure -->
+              <div class="column is-half">
+                <figure class="image">
+                  <img src="static/images/result_accuracy.png" alt="Selected source subjects for each target subject"/>
+                  <figcaption class="has-text-centered" style="margin-top: 0.5rem;">
+                    <strong>(b)</strong> Positional and angular errors during treatment
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+
+            <div class="content has-text-justified" style="margin-top: 2rem;">
+              <p>
+                Figure (a) reveals that when the target moves, the tracking system rapidly converges, reducing both positional and angular errors to acceptable levels. Treatment is then applied once the errors fall within these thresholds. Figure (b) illustrates The system achieves millimetre-level positional accuracy and sub-degree angular accuracy during treatment, resulting in improved stimulation precision and repeatability.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 
 <!-- =========================== Lab Logo =========================== -->
