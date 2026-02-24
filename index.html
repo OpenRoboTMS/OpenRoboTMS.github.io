@@ -137,13 +137,41 @@
 </section>
 
 
+<!-- =========================== Common Space Visualization =========================== -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3 has-text-centered">Overview Video</h2>
+
+          <div class="has-text-centered" style="margin-bottom: 1.5rem;">
+            <div class="publication-video">
+              <iframe src="https://www.youtube.com/embed/uSGgi1ID-Dw"
+                      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen
+                      style="width: 100%; height: 100%;"></iframe>
+            </div>
+          </div>
+
+          <div class="content has-text-justified">
+            <p>
+              This video presents an overview of the proposed OpenRoboTMS platform, highlighting its background, motivations, and key features for robot-assisted Transcranial Magnetic Stimulation (TMS). It demonstrates how clinicians can perform precise stimulation through an integrated workflow encompassing calibration, MRI-to-phantom registration, target selection, and continuous robotic tracking. Built on 3D Slicer and ROS, the platform delivers an open and extensible framework that integrates hardware, software, and core algorithms, supporting reproducible research and accelerating innovation in robot-assisted TMS.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
 <!-- =========================== Hardware Configurations =========================== -->
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
       <div class="columns is-centered">
         <div class="column is-four-fifths">
-          <h2 class="title is-3 has-text-centered">Hardware Configurations</h2>
+          <h2 class="title is-3 has-text-centered">Accessible Hardware Configurations</h2>
 
           <div class="item">
             <img src="static/images/hardware_configurations.png" alt="OpenRoboTMS Hardware Configurations"/>
@@ -170,7 +198,7 @@
     <div class="container">
       <div class="columns is-centered">
         <div class="column is-four-fifths">
-          <h2 class="title is-3 has-text-centered">Software Framework</h2>
+          <h2 class="title is-3 has-text-centered">Open and Extensible Software Framework</h2>
 
           <div class="item">
             <img src="static/images/software_framework.png" alt="OpenRoboTMS Software Framework"/>
@@ -191,32 +219,41 @@
   </div>
 </section>
 
-<!-- =========================== Common Space Visualization =========================== -->
+<!-- Video carousel -->
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
       <div class="columns is-centered">
         <div class="column is-four-fifths">
-          <h2 class="title is-3 has-text-centered">Introduction Video</h2>
-
-          <div class="has-text-centered" style="margin-bottom: 1.5rem;">
-            <div class="publication-video">
-              <iframe src="https://www.youtube.com/embed/uSGgi1ID-Dw"
-                      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen
-                      style="width: 100%; height: 100%;"></iframe>
+          <h2 class="title is-3 has-text-centered">Essential Algorithms</h2>
+          <div id="results-carousel" class="carousel results-carousel">
+            <div class="item item-video1">
+              <video id="video1" autoplay controls muted playsinline preload="auto">
+                <source src="static/videos/calibration.mp4" type="video/mp4">
+              </video>
             </div>
-          </div>
-
-          <div class="content has-text-justified">
-            <p>
-              This video presents an overview of the proposed OpenRoboTMS platform, highlighting its background, motivations, and key features for robot-assisted Transcranial Magnetic Stimulation (TMS). It demonstrates how clinicians can perform precise stimulation through an integrated workflow encompassing calibration, MRI-to-phantom registration, target selection, and continuous robotic tracking. Built on 3D Slicer and ROS, the platform delivers an open and extensible framework that integrates hardware, software, and core algorithms, supporting reproducible research and accelerating innovation in robot-assisted TMS.
-            </p>
+            <div class="item item-video2">
+              <video id="video2" controls muted playsinline preload="auto">
+                <source src="static/videos/registration.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="item item-video3">
+              <video id="video3" controls muted playsinline preload="auto">
+                <source src="static/videos/targeting.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="item item-video4">
+              <video id="video4" controls muted playsinline preload="auto">
+                <source src="static/videos/tracking.mp4" type="video/mp4">
+              </video>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
+<!-- End video carousel -->
 
 
 <!-- =========================== Lab Logo =========================== -->
